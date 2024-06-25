@@ -3,9 +3,9 @@ def solution(num_list):
     even = ''
     for i in num_list :
         if i%2==0 :
-            odd+=str(i)
+            even+=str(i)
         else :
-            even += str(i)
+            odd += str(i)
             
     answer = int(odd) + int(even)
     return answer
