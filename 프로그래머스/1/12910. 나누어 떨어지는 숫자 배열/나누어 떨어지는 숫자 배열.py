@@ -4,6 +4,6 @@ def solution(arr, divisor):
         if i % divisor == 0 :
             answer.append(i)
             answer.sort()
-    if len(answer)==0 :
+    if len(answer)==0 : # if not answer
         answer.append(-1)
     return answer
