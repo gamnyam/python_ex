@@ -1,12 +1,11 @@
 def solution(name, yearning, photo):
+    
     answer = []
-    for now_photo in photo :
+    name2score = dict(zip(name, yearning))
+    
+    for names in photo:
         score = 0
-        
-        for target_person in now_photo:
-            for i, target_name in enumerate(name):
-                if target_person == target_name :
-                    score += yearning[i]
-                    break
+        for name in names :
+            score += name2score.get(name,0)
         answer.append(score)
     return answer
